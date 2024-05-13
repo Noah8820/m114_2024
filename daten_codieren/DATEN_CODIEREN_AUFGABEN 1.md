@@ -124,7 +124,39 @@ d. Logisch EXOR
 a. 11 % 2 = 1
 b. 10 % 2 = 0
 c. 10 % 3 = 1
-d. 10 % 5 = 0
-e. 10 % 9 = 1
 
-Es gibt entweder einen Rest von 0 oder 1. In binärer Darstellung ist 10101 gleich 21 in Dezimal ohne Vorzeichen und mit Vorzeichen ist es -5.
+# Daten kodieren Alphanum
+
+## 1
+
+### a
+
+- Textsample1 = ANSI
+- Textsample2 = UTF8
+- Textsample3 = UTF16 BE BOM
+
+### b
+
+68
+
+### c
+
+- Textsample1 -> ANSI => 68 bytes = 1 Byte pro Zeichen
+
+- Textsample2 -> UTF8 => 71 bytes 1 Byte pro ASCII-Zeichen + mehr als 1 Byte pro nicht ASCII-Zeichen
+
+- Textsample3 -> UTF16 BE BOM => 138 bytes = 2 Bytes für die meisten Zeichen + 2 Bytes am Anfang für BOM
+
+### d
+
+ä, €
+
+### e
+
+BE (Big-Endian) = Das höchstwertigste Byte wird zuerst gespeichert oder übertragen.
+
+LE (Little-Endian) = Das niederwertigste Byte wird zuerst gespeichert oder übertragen.
+
+### f
+
+Wenn die Datei ausschließlich ASCII-Zeichen enthält, ändert sich nichts, da diese mit UTF-8 identisch sind. Wenn jedoch Zeichen vorhanden sind, die nicht in ASCII vorkommen, aber in UTF-8, werden diese Zeichen nur korrekt in UTF-8 dargestellt.
