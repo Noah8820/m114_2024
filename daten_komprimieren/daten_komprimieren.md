@@ -48,3 +48,25 @@ Grafik:
 ⬜⬜⬜⬜⬛⬜⬜⬜  
 ⬜⬜⬜⬜⬛⬜⬜⬜  
 ⬜⬜⬜⬜⬛⬜⬛⬛  
+
+### 8
+
+#### Weitere Verfahren zur verlustlosen Komprimierung 
+- Huffman-Codierung 
+- Lempel-Ziv-Welch (LZW) 
+- Deflate 
+- Burrows-Wheeler-Transformation (BWT) 
+- Run-Length Encoding (RLE)
+ 
+#### Daten, die verlustlos komprimiert werden sollten 
+- Textdateien  
+- Quellcode 
+- Datenbanken 
+- Wichtige Dokumente 
+- Medizinische Bilder
+
+#### Auswirkungen verlustbehafteter Komprimierung auf Briefe oder Java-Sourcecode  
+
+- Briefe: Unleserlich oder missverständliche Informationen. 
+- Java-Sourcecode: Unbrauchbarer Code, Kompilierungsfehler, fehlerhafte Ausführung. 
+
